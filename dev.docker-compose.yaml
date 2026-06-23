@@ -98,3 +98,8 @@ networks:
 volumes:
   postgres:
   redis:
+
+networks:
+  default: {}
+  coolify:
+    external: true
