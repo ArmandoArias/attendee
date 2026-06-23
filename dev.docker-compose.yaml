@@ -23,7 +23,6 @@ services:
       - REDIS_URL=redis://redis:6379/5
       - DJANGO_SETTINGS_MODULE=attendee.settings.development
     command: "python manage.py run_scheduler"
-    entrypoint: []
 
   attendee-app-local:
     build: ./
@@ -38,7 +37,6 @@ services:
       - REDIS_URL=redis://redis:6379/5
       - DJANGO_SETTINGS_MODULE=attendee.settings.development
     command: python manage.py runserver 0.0.0.0:8000
-    entrypoint: []
 
   attendee-webpage-streamer-local:
     build: ./
